@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Last Bootstrap</title>
+<link rel="stylesheet" href="kalika.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/7e4e92b887.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!--Nav Section-->
+<section>
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+<div class="d-flex">
+<ion-icon name="cog-outline" class="ion" style="height: 50px; width: 50px;"></ion-icon>
+<h1><span class="bleu">T</span>Desk</h1>
+</div>
+<div class="container">
+<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+<div class="offcanvas-header">
+<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+<ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+<li class="nav-item">
+<a class="nav-link active a" aria-current="page" href="bootstrap6.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link a" href="Blog.html">Blog</a>
+</li>
+<li class="nav-item">
+<a class="nav-link a" href="#">Knowledge</a>
+</li>
+<li class="nav-item">
+<a class="nav-link a" href="#">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link a" href="#">Contact</a>
+</li>
+<li class="nav-item dropdown">
+<ul class="dropdown-menu" id="drop">
+<li class="nav-item">
+<a class="nav-link active" aria-current="page" href="#">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Blog</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Knowledge</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#">Contact</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!--Button modals-->
+<button type="button" class="btn btn-light bv" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-
+whatever="@getbootstrap"><i class="fas fa-sign-in-alt d-inline"></i>login</button>
+<!--MODALS-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<!--Modal header-->
+<div class="modal-header">
+<h1 class="modal-title fs-5" id="exampleModalLabel">Customer Login</h1>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<div class="modal-body">
+<form>
+<div class="mb-3 col-md-10">
+<div class="input-group flex-nowrap">
+<span class="input-group-text p-3" id="addon-wrapping"><i class="fa-solid fa-user"></i></span>
+<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+</div>
+<div class="mb-3 col-md-10">
+<!--Input groupe-->
+<div class="input-group flex-nowrap">
+<span class="input-group-text p-3" id="addon-wrapping"><i class="fa-solid fa-lock"></i></span>
+<input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+</div>
+</form>
+</div>
+<!--Login button-->
+<div class="container">
+<div class="row">
+<div class="form-group row">
+<div class="row col-4">
+<button type="button" class="btn btn-primary btn-md">Login</button>
+</div>
+<div class="col-6 text-end">
+<a href="#" class="font-s-14 bn1">Forgot Password ?</a>
+</div>
+</div>
+</div>
+</div>
+<hr data-content="OR" class="divider">
+<div class="container my-5">
+<div class="row">
+<div class="form-group row col-11 justify-content-between">
+<div class="col-4">
+<button type="button" class="btn btn-social-facebook face bg-primary">
+<i class="fa-brands fa-facebook-f"></i>
+Facebook</button>
+</div>
+<div class="col-4 mx-4 ">
+<button type="button" class="btn btn-social-google goo bg-danger">
+<i class="fa-brands fa-google-plus-g"></i>
+Google</button>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="modal-footer foot d-inline text-center">
+Don't Have account <a href="">Create New</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+
+</section>
+<!--Home Section-->
+<section class="bg-primary p-5">
+<div class="container-fluid mt-5 mb-5">
+<div class="col-md-12">
+<h3 class="text-center text-white">WHAT CAN WE HELP YOU WITH ?</h3>
+<form>
+<div class="mb-3 col-md-8 ms-auto me-auto">
+<div class="input-group flex-nowrap">
+<span class="input-group-text p-3"><i class="fas fa-search icon"></i></span>
+<input class="form-control" type="search" placeholder="Search....">
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="container">
+<div class="row justify-content-center">
+<a href="#" class="col-md-2 text-decoration-none" id="carte">
+<div class="card border-0 text-center">
+<i class="fas fa-layer-group m-auto mt-3 fs-2" style="height: 50px;width: 50px;"></i>
+<div class="card-body">
+<span>Knowledge Base</span>
+</div>
+</div>
+</a>
+<a href="#" class="col-md-2 text-decoration-none" id="carte">
+<div class="card border-0 text-center">
+  <i class="far fa-question-circle m-auto mt-3 fs-2" style="height: 50px;width: 50px;"></i>
+<div class="card-body">
+<span>FAQ</span>
+</div>
+</div>
+</a>
+<a href="#" class="col-md-2 text-decoration-none" id="carte">
+<div class="card border-0 text-center">
+<i class="far fa-id-card m-auto mt-3 fs-2" style="height: 50px;width: 50px;"></i>
+<div class="card-body">
+<span>Register</span>
+</div>
+</div>
+</a>
+<a href="#" class="col-md-2 text-decoration-none" id="carte">
+<div class="card border-0 text-center">
+<i class="fas fa-edit m-auto mt-3 fs-2" style="height: 50px;width: 50px;"></i>
+<div class="card-body">
+<span>New Ticket</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!--Manage Section-->
+<section class=" p-5 bg-light">
+<div class="container mt-5 text-center">
+<p class="text-center text-primary mt-2">We are the best<p>
+<h3 class="text-center">Manage Everything in One Place</h3>
+<div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+<a href="#" class="text-decoration-none carte" >
+<div class="col">
+<div class="card h-100">
+<i class="fas fa-tasks icon fs-2 mt-3 p-4 m-auto text-white bg-primary rounded manager-icons" style="height: 80px;width: 80px;"></i>
+<div class="card-body text-dark">
+<h5 class="card-title">Instant Setup</h5>
+<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+</div>
+</div>
+</div>
+</a>
+<a href="#" class="text-decoration-none carte">
+<div class="col">
+<div class="card h-100">
+<i class="fas fa-rocket icon fs-2 mt-3 m-auto p-4 text-white bg-primary rounded manager-icons" style="height: 80px;width: 80px;"></i>
+<div class="card-body text-dark">
+<h5 class="card-title">Fast Loading</h5>
+<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+</div>
+</div>
+</div>
+</a>
+<a href="#" class="text-decoration-none carte">
+<div class="col">
+<div class="card h-100">
+<i class="fas fa-hand-holding-usd icon fs-2 mt-3 m-auto p-4 text-white bg-primary rounded manager-icons" style="height: 80px;width: 80px;"></i>
+<div class="card-body text-dark">
+<h5 class="card-title">Affordable Price</h5>
+<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!--Knowledge Base-->
+<section class="p-3">
+<div class="container-fluid">
+<p class="text-center text-primary">Knowledge Base<p>
+<h3 class="text-center">Make Your Support</h3>
+<div class="card-group mt-3">
+<div class="card cartes p-3">
+<a href="#" class="text-decoration-none"><h5 class="mx-4">The Basics <span class="trente">30</span></h5></a>
+<ul>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>What is Lorem ipsum?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>Where does it come from ?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>Where can I get some ?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>Why do we use it ?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p> Lorem Ipsum is simply dummy text</p>
+</li>
+</a>
+</ul>
+</div>
+<div class="card cartes p-3">
+<a href="#" class="text-decoration-none"><h5 class="mx-4">The Basics <span class="trente">30</span></h5></a>
+<ul>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>What is Lorem ipsum?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>Where does it come from ?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>Where can I get some ?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>Why do we use it ?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p> Lorem Ipsum is simply dummy text</p>
+</li>
+</a>
+</ul>
+</div>
+<div class="card cartes p-3">
+<a href="#" class="text-decoration-none"><h5 class="mx-4">The Basics <span class="trente">30</span></h5></a>
+<ul>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>What is Lorem ipsum?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>Where does it come from ?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>Where can I get some ?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>Why do we use it ?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p> Lorem Ipsum is simply dummy text</p>
+</li>
+</a>
+</ul>
+</div>
+</div>
+<div class="card-group">
+<div class="card cartes p-3">
+<a href="#" class="text-decoration-none"><h5 class="mx-4">The Basics <span class="trente">30</span></h5></a>
+<ul>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>What is Lorem ipsum?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>Where does it come from ?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>Where can I get some ?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>Why do we use it ?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p> Lorem Ipsum is simply dummy text</p>
+</li>
+</a>
+</ul>
+</div>
+<div class="card cartes p-3">
+<a href="#" class="text-decoration-none"><h5 class="mx-4">The Basics <span class="trente">30</span></h5></a>
+<ul>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>What is Lorem ipsum?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>Where does it come from ?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>Where can I get some ?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>Why do we use it ?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p> Lorem Ipsum is simply dummy text</p>
+</li>
+</a>
+</ul>
+</div>
+<div class="card cartes p-3">
+<a href="#" class="text-decoration-none"><h5 class="mx-4">The Basics <span class="trente">30</span></h5></a>
+<ul>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>What is Lorem ipsum?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>Where does it come from ?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>Where can I get some ?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p>Why do we use it ?</p>
+</li>
+</a>
+<a href="#" class="text-decoration-none">
+<li class="d-flex">
+<i class="far fa-file-alt mx-1"></i>
+<p> Lorem Ipsum is simply dummy text</p>
+</li>
+</a>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!--Team Section-->
+<section class="bg-light p-5">
+<div class="container ">
+<p class="text-center text-primary">Our Team<p>
+<h4 class="text-center mb-3">Didn't Find Your Answer ?</h4>
+<div class="row">
+<div class="col-md-2">
+<img src="images/team1.jpg" class="img-fluid rounded" alt="">
+<h6 class="text-center">Mouhamed</h6>
+<p class="text-center">Support</p>
+</div>
+<div class="col-md-2">
+<img src="images/team2.jpg" class="img-fluid rounded" alt="">
+<h6 class="text-center">Moussa</h6>
+<p class="text-center">Support</p>
+</div>
+<div class="col-md-2">
+<img src="images/team6.jpg" class="img-fluid rounded" alt="">
+<h6 class="text-center">Soumare</h6>
+<p class="text-center">Design Engineer</p>
+</div>
+<div class="col-md-2">
+<img src="images/team4.jpg" class="img-fluid rounded" alt="">
+<h6 class="text-center">Diallo</h6>
+<p class="text-center">Developer</p>
+</div>
+<div class="col-md-2">
+<img src="images/team5.jpg" class="img-fluid rounded" alt="">
+<h6 class="text-center">Ndongo</h6>
+<p class="text-center">Developer</p>
+</div>
+<div class="col-md-2">
+<img src="images/team3.jpg" class="img-fluid rounded" alt="">
+<h6 class="text-center">David</h6>
+<p class="text-center">Support</p>
+</div>
+</div>
+<div class="text-center">
+<button type="button" class="btn btn-primary fs-5"><i class="far fa-comment"></i><span class="ms-1">Start Chat</span></button>
+</div>
+</div>
+</section>
+<!--carousel section-->
+<section>
+<div class="container-fluid bg-primary p-5">
+<p class="text-center text-white">Testimonials<p>
+<h4 class="text-center mb-3">Our Clients Say</h4>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+<div class="carousel-item active">
+<div class="row">
+<div class="col-sm-6 mb-3 mb-sm-0">
+<div class="card">
+<div class="card-body">
+<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Tempora beatae id ea fugit. Maiores, dolorum? Debitis consequatur eaque cumque ab?</p>
+<div class="d-flex mt-3">
+<img src="images/team6.jpg" width="55px" height="15px" class="img-fluid rounded-5 col-2 p-3" alt="">
+<div class="container-fluid">
+<p>Admin account</p>
+<button type="button" class="btn btn-outline-secondary" disabled>guest</button>
+<div class="text-end">
+ <span class="time"><i class="fa fa-clock-o"></i> 11 July 2020</span>
+<div class="rate-rang" data-value="4">
+<i class="fa fa-star active"></i>
+<i class="fa fa-star active"></i>
+<i class="fa fa-star active"></i>
+<i class="fa fa-star active"></i>
+<i class="fa fa-star"></i>
+</div>
+</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="card">
+<div class="card-body">
+<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Tempora beatae id ea fugit. Maiores, dolorum? Debitis consequatur eaque cumque ab?</p>
+<div class="d-flex mt-3">
+<img src="images/team6.jpg" width="55px" height="15px" class="img-fluid rounded-5 col-2 p-3" alt="">
+<div class="container-fluid">
+<p>Admin account</p>
+<button type="button" class="btn btn-outline-secondary" disabled>guest</button>
+<div class="text-end">
+ <span class="time"><i class="fa fa-clock-o"></i> 11 July 2020</span>
+<div class="rate-rang" data-value="4">
+<i class="fa fa-star active"></i>
+<i class="fa fa-star active"></i>
+<i class="fa fa-star active"></i>
+<i class="fa fa-star active"></i>
+<i class="fa fa-star"></i>
+</div>
+</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="carousel-item">
+<div class="row">
+<div class="col-sm-6 mb-3 mb-sm-0">
+<div class="card">
+<div class="card-body">
+<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Tempora beatae id ea fugit. Maiores, dolorum? Debitis consequatur eaque cumque ab?</p>
+<div class="d-flex mt-3">
+<img src="images/team6.jpg" width="55px" height="15px" class="img-fluid rounded-5 col-2 p-3" alt="">
+<div class="container-fluid">
+<p>Admin account</p>
+<button type="button" class="btn btn-outline-secondary" disabled>guest</button>
+<div class="text-end">
+ <span class="time"><i class="fa fa-clock-o"></i> 11 July 2020</span>
+<div class="rate-rang" data-value="4">
+<i class="fa fa-star active"></i>
+<i class="fa fa-star active"></i>
+<i class="fa fa-star active"></i>
+<i class="fa fa-star active"></i>
+<i class="fa fa-star"></i>
+</div>
+</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="card">
+<div class="card-body">
+<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Tempora beatae id ea fugit. Maiores, dolorum? Debitis consequatur eaque cumque ab?</p>
+<div class="d-flex mt-3">
+<img src="images/team6.jpg" width="55px" height="15px" class="img-fluid rounded-5 col-2 p-3" alt="">
+<div class="container-fluid">
+<p>Admin account</p>
+<button type="button" class="btn btn-outline-secondary" disabled>guest</button>
+<div class="text-end">
+ <span class="time"><i class="fa fa-clock-o"></i> 11 July 2020</span>
+<div class="rate-rang" data-value="4">
+<i class="fa fa-star active"></i>
+<i class="fa fa-star active"></i>
+<i class="fa fa-star active"></i>
+<i class="fa fa-star active"></i>
+<i class="fa fa-star"></i>
+</div>
+</div> 
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="carousel-item">
+<div class="row">
+<div class="col-sm-6 mb-3 mb-sm-0">
+<div class="card">
+<div class="card-body">
+<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Tempora beatae id ea fugit. Maiores, dolorum? Debitis consequatur eaque cumque ab?</p>
+<div class="d-flex mt-3">
+<img src="images/team6.jpg" width="55px" height="15px" class="img-fluid rounded-5 col-2 p-3" alt="">
+<div class="container-fluid">
+<p>Admin account</p>
+<button type="button" class="btn btn-outline-secondary" disabled>guest</button>
+<div class="text-end">
+ <span class="time"><i class="fa fa-clock-o"></i> 11 July 2020</span>
+<div class="rate-rang" data-value="4">
+<i class="fa fa-star active"></i>
+<i class="fa fa-star active"></i>
+<i class="fa fa-star active"></i>
+<i class="fa fa-star active"></i>
+<i class="fa fa-star"></i>
+</div>
+</div>                    
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="card">
+<div class="card-body">
+<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Tempora beatae id ea fugit. Maiores, dolorum? Debitis consequatur eaque cumque ab?</p>
+<div class="d-flex mt-3">
+<img src="images/team6.jpg" width="55px" height="15px" class="img-fluid rounded-5 col-2 p-3" alt="">
+<div class="container-fluid">
+<p>Admin account</p>
+<button type="button" class="btn btn-outline-secondary" disabled>guest</button>
+<div class="text-end">
+ <span class="time"><i class="fa fa-clock-o"></i> 11 July 2020</span>
+<div class="rate-rang" data-value="4">
+<i class="fa fa-star active"></i>
+<i class="fa fa-star active"></i>
+<i class="fa fa-star active"></i>
+<i class="fa fa-star active"></i>
+<i class="fa fa-star"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-5 text-center">
+<button type="button" class="btn btn-outline-light"><i class="fa-solid fa-arrow-left"></i></button>
+<button type="button" class="btn btn-outline-light">Load More</button>
+<button type="button" class="btn btn-outline-light"><i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+
+</section>
+<section>
+<!--Pricing Plane-->
+<div class="container-fluid bg-light p-5">
+<div class="Texte text-center">
+<p class="text-primary">Pricing Plane</p>
+<h4 class="mb-4">Chose Your Plan </h4>
+</div>
+<div class="row">
+<div class="col-md-3">
+<div class="card">
+<h4 class="text-center p-3">Basic</h4>
+<div class="card-body bg-primary text-white">
+<h5 class="card-text text-center">$250</h5>
+<p class="text-center">Per Month</p>
+</div>
+<div class="text-center mt-3">
+<p>Android Application</p>
+<p>ios Application</p>
+<p>UX/UI Designs</p>
+<p>Wordpress Develop</p>
+<p>PSD to HTML</p>
+<p>Digital Marketing</p>
+</div>
+<div class="text-center p-2"><button type="button" class="btn btn-primary">Start Now</button></div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="card">
+<h5 class="text-center p-3">Standard</h5>
+<div class="card-body bg-primary text-white">
+<h4 class="card-text text-center">$500</h4>
+<p class="text-center">Per Month</p>
+</div>
+<div class="text-center mt-3">
+<p>Android Application</p>
+<p>ios Application</p>
+<p>UX/UI Designs</p>
+<p>Wordpress Develop</p>
+<p>PSD to HTML</p>
+<p>Digital Marketing</p>
+</div>
+<div class="text-center p-2"><button type="button" class="btn btn-primary">Start Now</button></div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="card" >
+<h5 class="text-center p-3">Regular</h5>
+<div class="card-body bg-primary text-white">
+<h4 class="card-text text-center">$700</h4>
+<p class="text-center">Per Month</p>
+</div>
+<div class="text-center mt-3">
+<p>Android Application</p>
+<p>ios Application</p>
+<p>UX/UI Designs</p>
+<p>Wordpress Develop</p>
+<p>PSD to HTML</p>
+<p>Digital Marketing</p>
+</div>
+<div class="text-center p-2"><button type="button" class="btn btn-primary">Start Now</button></div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="card">
+<h5 class="text-center p-3">Premium</h5>
+<div class="card-body bg-primary text-white">
+<h4 class="card-text text-center">$999</h4>
+<p class="text-center">Per Month</p>
+</div>
+<div class="text-center mt-3">
+<p>Android Application</p>
+<p>ios Application</p>
+<p>UX/UI Designs</p>
+<p>Wordpress Develop</p>
+<p>PSD to HTML</p>
+<p>Digital Marketing</p>
+</div>
+<div class="text-center p-2"><button type="button" class="btn btn-primary">Start Now</button></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--Footer-->
+<section>
+<div class="container-fluid mt-5">
+<p class="text-center text-primary">Get in touch<p>
+<h4 class="text-center">Connect Is Made Just For You</h4>
+<div class="div justify-content-md-center d-flex mb-3">
+<form class="input-group mt-4 w-50">
+<input type="text" class="form-control" placeholder="Enter Email-adress" aria-label="Recipient's username" aria-describedby="button-addon2">
+<button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+</form>
+</div>
+<div class="d-flex justify-content-center mt-5">
+<p class="mx-2">FAQ</p>
+<p class="mx-2">Terms</p>
+<p class="mx-2">Changelog</p>
+</div>
+<div class="d-flex justify-content-center mt-2">
+<i class="fab fa-twitter mx-1"></i>
+<i class="fab fa-linkedin-in mx-1"></i>
+<i class="fab fa-youtube mx-1"></i>
+<i class="fab fa-instagram mx-1"></i>
+</div>
+<div class="container-fluid bg-light p-3">
+<p class="text-center">Made by Tatwerat ©️ 2020 AH Tickets Pty Ltd.</p>
+</div>
+</div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
